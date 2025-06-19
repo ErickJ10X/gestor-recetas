@@ -14,11 +14,11 @@ public class Receta {
     private String titulo;
 
     @Lob
-    @Column(nullable = false)
+    @Column(nullable = false, columnDefinition = "text")
     private String ingredientes;
 
     @Lob
-    @Column(nullable = false)
+    @Column(nullable = false, columnDefinition = "text")
     private String pasos;
 
     @Column(name = "imagen_url")
