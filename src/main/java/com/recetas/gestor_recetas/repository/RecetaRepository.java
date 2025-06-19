@@ -10,4 +10,5 @@ import java.util.List;
 public interface RecetaRepository extends JpaRepository<Receta,Long> {
     List<Receta> findByAutorId(Long autorId);
     List<Receta> findByTituloContainingIgnoreCase(String titulo);
+
 }
