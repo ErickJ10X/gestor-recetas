@@ -10,8 +10,7 @@ public class RecetaFavoritaId implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof RecetaFavoritaId)) return false;
-        RecetaFavoritaId that = (RecetaFavoritaId) o;
+        if (!(o instanceof RecetaFavoritaId that)) return false;
         return Objects.equals(usuario, that.usuario) && Objects.equals(receta, that.receta);
     }
 

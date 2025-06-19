@@ -21,7 +21,7 @@ public class Receta {
     @Column(nullable = false)
     private String pasos;
 
-    @Column(name = "imagen_url", length = 255)
+    @Column(name = "imagen_url")
     private String imagenUrl;
 
     @ManyToOne
